@@ -1,0 +1,15 @@
+# iSee — runtime dependencies
+#
+# Hard requirements (app refuses to start without these):
+requests>=2.31
+
+# Soft requirements (screen capture features). The app degrades
+# gracefully if these are missing, but you almost certainly want
+# them — without them iSee is just a chat client.
+mss>=9.0
+Pillow>=10.0
+pygetwindow>=0.0.9
+
+# Optional: enables drag-and-drop image support. Skip if you don't
+# need to drop image files onto the chat from File Explorer.
+tkinterdnd2>=0.4.3
